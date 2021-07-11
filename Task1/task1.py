@@ -1,5 +1,7 @@
 import re
 
+maxx="no max"
+
 rad=input("\nРядок: ")
 
 print("\nРядок: ", rad)
@@ -23,14 +25,10 @@ for let in el.split():
 upper_let=" ".join(row_new_list)
 print("\nВелика літера: ", upper_let)
 
-
-new_num_max=list(map(int, en.split()))
-
-
-max_num=max(new_num_max)
-
-
-print("\nМаксимальне значення: ", max_num)
-
+for numbers in en:
+    if "0" <= numbers <= "9":
+        num_max=list(map(int, en.split()))
+        maxx =max(num_max)
+print("\nМаксимальне значення: ", maxx)
 
 
